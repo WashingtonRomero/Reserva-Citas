@@ -1,0 +1,38 @@
+﻿@page
+@model ReseñasModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Reseñas";
+}
+
+<div class="reviews-container">
+    <h2>Reseñas de Consultas</h2>
+    @foreach (var consulta in Model.Consultas)
+    {
+        <div class="review-card">
+            <h3>Consulta @consulta.Id</h3>
+            @if (!consulta.FeedbackEnviado)
+            {
+                <a href="/DejarFeedback?id=@consulta.Id" class="btn">Da tu feedback</a>
+            }
+            else
+            {
+                <div class="feedback">
+                    <p>
+                        Calificación:
+                        @for (int i = 0; i < consulta.Calificacion; i++)
+                        {
+                            <span>&#9733;</span>
+                        }
+                        @for (int i = consulta.Calificacion; i < 5; i++)
+                        {
+                            <span>&#9734;</span>
+                        }
+                    </p>
+                    <p>Reseña: @consulta.Resena</p>
+                </div>
+            }
+        </div>
+    }
+</div>
+

@@ -1,0 +1,20 @@
+﻿@page
+@model ReservarCitaModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Reservar Cita";
+}
+
+<div class="booking-container">
+    <h2>Reservar Cita con @Model.Doctor.Nombre</h2>
+    <form method="post">
+        <label for="fecha">Seleccione Fecha</label>
+        <input type="date" id="fecha" name="Fecha" required />
+
+        <label for="hora">Seleccione Hora</label>
+        <input type="time" id="hora" name="Hora" required />
+
+        <button type="submit">Confirmar Reserva</button>
+    </form>
+</div>
+

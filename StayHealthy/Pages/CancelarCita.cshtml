@@ -1,0 +1,16 @@
+﻿@page
+@model CancelarCitaModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Cancelar Cita";
+}
+
+<div class="cancelation-container">
+    <h2>Cancelar Cita</h2>
+    <p>¿Estás seguro de que deseas cancelar esta cita?</p>
+    <form method="post">
+        <button type="submit" name="action" value="cancel">Cancelar Cita</button>
+        <a href="/Index">Volver</a>
+    </form>
+</div>
+

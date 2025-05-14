@@ -1,0 +1,7 @@
+C:\Users\washi\source\repos\StayHealthy\StayHealthy\obj\Release\net9.0\PubTmp\Out\StayHealthy.exe
+C:\Users\washi\source\repos\StayHealthy\StayHealthy\obj\Release\net9.0\PubTmp\Out\appsettings.Development.json
+C:\Users\washi\source\repos\StayHealthy\StayHealthy\obj\Release\net9.0\PubTmp\Out\appsettings.json
+C:\Users\washi\source\repos\StayHealthy\StayHealthy\obj\Release\net9.0\PubTmp\Out\StayHealthy.dll
+C:\Users\washi\source\repos\StayHealthy\StayHealthy\obj\Release\net9.0\PubTmp\Out\StayHealthy.deps.json
+C:\Users\washi\source\repos\StayHealthy\StayHealthy\obj\Release\net9.0\PubTmp\Out\StayHealthy.runtimeconfig.json
+C:\Users\washi\source\repos\StayHealthy\StayHealthy\obj\Release\net9.0\PubTmp\Out\StayHealthy.pdb

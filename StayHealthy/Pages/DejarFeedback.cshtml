@@ -1,0 +1,24 @@
+﻿@page
+@model DejarFeedbackModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Dejar Feedback";
+}
+
+<div class="feedback-form">
+    <h2>Deja tu Feedback para la Consulta @Model.ConsultaId</h2>
+    <form method="post">
+        <label for="calificacion">Calificación</label>
+        <div id="calificacion">
+            @for (int i = 1; i <= 5; i++)
+            {
+                <input type="radio" id="estrella@i" name="Calificacion" value="@i" required />
+                <label for="estrella@i">&#9733;</label>
+            }
+        </div>
+        <label for="resena">Reseña Detallada</label>
+        <textarea id="resena" name="Resena" rows="4" required></textarea>
+        <button type="submit">Enviar Feedback</button>
+    </form>
+</div>
+

@@ -1,0 +1,17 @@
+﻿@page
+@model DoctorDetailsModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Detalles del Médico";
+}
+
+<div class="doctor-details">
+   <img src="/imagenes/doctor.jpeg" alt="Imagen del doctor" width="200">
+<img src="/imagenes/doctora.jpeg" alt="Imagen de la doctora" width="200">
+    <h2>@Model.Doctor.Nombre</h2>
+    <h3>@Model.Doctor.Especialidad</h3>
+    <p>Descripción: @Model.Doctor.Descripcion</p>
+    <p>Ubicación: @Model.Doctor.Ubicacion</p>
+    <a href="/ReservarCita?id=@Model.Doctor.Id" class="btn">Reservar Cita</a>
+</div>
+
